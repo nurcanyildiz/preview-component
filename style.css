@@ -1,0 +1,166 @@
+body {
+    background: hsl(210, 46%, 95%);
+}
+
+.container {
+    width: 750px;
+    height: 300px;
+    padding: 10px;
+    border-radius: 15px 15px 0 0;
+    margin:10% auto;
+}
+
+.body {
+    border-radius: 15px 15px 0 0;
+    background-color: white;
+    display: flex;
+}
+
+
+.right-container-content {
+    margin: 0 5px 0 15px;
+}
+
+.social-icons-container {
+    width: 100%;
+    height: 50px;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 0 0 10px 10px;
+}
+
+
+.picture-container {
+    height: 300px;
+}
+
+.picture-container > img {
+    height: 100%;
+}
+
+
+.title {
+    font-weight: 500;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    margin: 0;
+
+}
+
+.content {
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.footer {
+
+    display: flex;
+}
+
+.avatar-img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+    height: 100%;
+}
+
+.img {
+    height: 45px;
+    margin: 10px 0 0 10px;
+}
+
+.title-author-date {
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.title-author {
+
+}
+
+.something {
+    display: flex;
+    width: 390px;
+}
+
+.content-date {
+    padding-bottom: 6px;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.footer {
+
+}
+
+svg {
+    width: 100%;
+    margin-top: 25px;
+    float: right;
+}
+
+
+.social-icons-container {
+    width: 100%;
+    height: 50px;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 0 0 10px 10px;
+    display: none;
+}
+
+/*
+how to show social-icons-container  when it is small screen ?
+*/
+
+.social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.share {
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    padding: 5px;
+}
+
+.left-container-picture {
+    display: inline-block;
+}
+
+.right-container-content {
+    display: inline-block;
+}
+
+.share, a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 320px;
+    }
+
+    .left-container-picture {
+        display: block;
+    }
+
+    .body {
+        padding: 10px 10px 0 10px;
+        border-radius: 15px 15px 0 0;
+        background-color: white;
+        display: block;
+    }
+
+    .footer {
+        display: none !important;
+    }
+
+    .social-icons-container {
+        display: block !important;
+    }
+}
